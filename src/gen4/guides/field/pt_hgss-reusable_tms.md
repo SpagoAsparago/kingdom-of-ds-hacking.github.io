@@ -5,7 +5,7 @@
 > The Research was made by Mikelan98 with help from NextWorld and Bagboy.
 Mikelan98 has requested that you give credit to him if you implement this in your hack.
 
-This is a guide on how to implement reusable TMs in Platinum and HGSS. The US versions of those games are used, so offsets might be not be the same if you're using a different version.
+This is a guide on how to implement reusable TMs in Platinum and HGSS. The US versions of those games are used, so offsets may be not be the same if you're using a different version.
 
 The tools required are an hex editor and Tinke 0.9.2, or instead CrystalTile2 if you're using HGSS.
 
@@ -28,7 +28,9 @@ Open your ROM in Tinke, search the file, select it and click the extract button.
 
 ### HGSS
 For HGSS you need to extract *arm9.bin* and *overlay_0015.bin*, but they are compressed unlike in Platinum hence the need for CystalTile2.
-Open CrystalTile2 and then select File>Open and select your ROM. Then click the NDS icon in the top bar, which should open a window called *NDS filesystem information*.
+Open CrystalTile2 and then select File>Open and select your ROM. Then click the NDS icon in the top bar, which should open a window called *NDS filesystem information*:
+
+![](resources/pt_hgss-reusable_tms/tms_ct2screen.PNG)
 
 Select the file you want to export, right click and click *Extract (U)*, and save it somewhere.
 You can also use the arm9.bin from your DSPRE project folder, which is already uncompressed.

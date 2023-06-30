@@ -1,4 +1,4 @@
-# Tutorial Name
+# How to make TMs Reusable<sup>*(Platinum/HGSS)*</sup>
 
 >This guide was originally written by Drayano and formatted for this wiki by SpagoAsparago.
 
@@ -13,37 +13,33 @@ The tools required are an hex editor and Tinke 0.9.2, or instead CrystalTile2 if
 ## Table of Contents
 * [Extracting the files](#section)
   * [Platinum](#subsection-1)
-* [Setting TMs to infinite](#section-2)
-* [Removing the TM number from being displayed](#section-3)
+  * [HGSS](#subsection-2)
+* [Hex Editing](#section-2)
+  * [Making TMs infinte](#subsection-1)
+  * [Removing the TM item count](#subsection-2)
+* [Reinserting the files](#section-3)
 
-## Section
-### Subsection
-You can use steps, if you want.
-1. Something
-2. Like
-3. This
-4. Is
-5. Perfectly
-6. Fine
+## Extracting the files
+First you need to extract the relative files in order to perform the hex editing
+### Platinum
+For Platinum the files you need are *arm9.bin* and *overaly9_84*.
 
-### Subsection 2
-You can use bullet points, if you want.
-* Something
-* Like
-* This
-* Is
-* Also
-* Fine
+Open your ROM in Tinke, search the file, select it and click the extract button.
 
-## Section 2
-Dropdowns are cool. Look.
 
-<details>
- <summary>Summary. Click me for more details.</summary>
- <p>Hi, I am the details you asked for. You can hide me as well.</p>
-</details>
+### HGSS
+For HGSS you need to extract *arm9.bin* and *overlay_0015.bin*, but they are compressed unlike in Platinum hence the need for CystalTile2.
 
-## Section 3
+
+## Hex Editing
+
+### Making TMs infinite
+
+
+### Removing the TM item count
+
+
+
 Infinite TMs in Gen IV
 ---
 Let me first preface this by saying that this was figured out by Mikelan98 (with some help from Nextworld and BagBoy to find some of the offsets in different languages). Mikelan98 has requested that you give credit to him if you implement this in your hack.

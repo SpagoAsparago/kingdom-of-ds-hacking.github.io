@@ -1,7 +1,8 @@
-# Tutorial Name
+# Reusable Repel <sup>*(Platinum/HGSS)*</sup>
 > This guide was written by SpagoAsparago. Credits to BluRose for helping with the assembly.
 
 This is a tutorial on how to implement a reusable repel in Plat and HGSS, either with a multi-choice menu when a repels runs out:
+![](resources/pt_hgss-repel/repel.png)
 
 Or the BW2 system, where the prompt triggers only if you have another of the same type of repel that just run out.
 
@@ -17,7 +18,7 @@ Or the BW2 system, where the prompt triggers only if you have another of the sam
 
 ## Scripting
 
-In DSPRE, go to the Script Editor and open script file [number], then change the following Scripts and Functions:
+In DSPRE, go to the Script Editor and open script file 211 (Plat) / ??? (HGSS), then change the following Scripts and Functions:
 
 ### Multi-choice
 
@@ -146,14 +147,25 @@ Return
  <p>Hi, I am the details you asked for. You can hide me as well.</p>
 </details>
 
-Remember to save the script file after you're done
+Then save the script file and go to the text editor tab
 
 ## Text
-In DSPRE text editor, open text file number and change the following lines:
+
+Go to the text archives listed below and change the correspondent lines:
 
 <details>
  <summary>Platinum</summary>
- <p>Hi, I am the details you asked for. You can hide me as well.</p>
+ <p>
+
+* TextArchive 361:
+   * Message 30: ```Repel```
+   * Message 31: ```Super Repel```
+   * Message 32: ```Max Repel```
+* Text Archive 213 
+   * Message 75: ```Repel’s effect wore off...\nWould you like to use another one?```
+   * Message 72: ```\v0103ぁ\x0000\x0000 used the\n\v0108ぁ\x0001\x0000.\rWild Pokémon will be repelled.```
+
+ </p>
 </details>
 
 
@@ -174,6 +186,7 @@ Do **not** add additional bytes, instead replace the existing bytes, in HxD you 
 <details>
  <summary>Platinum</summary>
 <p>
+	
 Offset: `0x4EAE8`
   
 Byte Sequence: ```0B 48 01 68 0B 48 09 18 0B 48 02 78 0A 70 C0 46 C0 46 C0 46 C0 46 C0 46 C0 46 C0 46 C0 46 C0 46 C0 46 C0 46 C0 46 C0 46 C0 46 C0 46 C0 46 70 47 40 1D 10 02 87 80 00 00 28 FF 3D 02```

@@ -45,7 +45,7 @@ Click *Search All* to display all the possible results.
 
 ![](hexsearch.PNG)
 
-### Converting from Decimal to Hexadecimal - Little Endian
+### Little Endian
 
 When it comes to binary all the data is stored in [little-endian format](https://thebittheories.com/little-endian-vs-big-endian-b4046c63e1f2):
 

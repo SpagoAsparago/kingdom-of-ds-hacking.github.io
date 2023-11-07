@@ -50,6 +50,9 @@ Click *Search All* to display all the possible results.
 When it comes to binary all the data is stored in [little-endian format](https://thebittheories.com/little-endian-vs-big-endian-b4046c63e1f2):
 
 To keep it simple, just remember that the order of bytes is always inverted. For example, if you want to search 1212, first convert it to hexadecimal (Windows Calculator programmer mode can come in handy): it will be `04 BC`, swapping the order of bytes we get the little endian number which is `BC 04` in this case.
+Also, in HxD you can see the decimal value of the bytes you currently have selected (Make sure Little Endian is selected).
+
+![](hexconversion.PNG)
 
 ## Pasting Bytes
 

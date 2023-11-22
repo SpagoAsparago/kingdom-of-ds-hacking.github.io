@@ -7,39 +7,29 @@ You will need to have installed (CTRMap-CE)[https://github.com/kingdom-of-ds-hac
 --- 
 ## Table of Contents
 * [Exporting Buildings](#section)
+  * [Exporting Animations](#subsection)
 * [Importing Buildings](#section-2)
-* [Exporting Animations](#section-3)
-* [Importing Animations](#section-4)
-
+  * [Importing Animations](#subsection-2)
 The first thing you want to do is load the map you want to export/import your building(s) using the Zone Loader, then open the building editor by clicking the Pokémon Center icon in the World Editor's top bar, and then click *Edit Resource Bundle*
+
+![](ctrmapbuildingeditor.PNG)
+
 ## Exporting Buildings
 Select the building you want to export from the list on the left side of the editor, then click the *Open in CS* button right below. This will launch Creative Map studio, from where you can export the model in a number of different formats, using the *Export* options from the top bar.
 
 About the different file types you can get, it's worth mentioning:
 * COLLADA: exports as **DAE** format
-* NNS Resource: exports as NSBMD, Nintendo's proprietary format
-* WaveFront OBJ: exports as **OBJ** format
+* NNS Resource: exports as **NSBMD**, Nintendo's proprietary format
+* WaveFront OBJ: exports as **OBJ** format. The textures will be exported as a separate **mtl** file, keep both in the same directory.
 
-If you're planning to import the building in a gen 4 game, you should export as either OBJ or NNS resource since PDSMS and DSPRE building editors cannot import DAE models.
+If you're planning to import the building in a gen 4 game, both DSPRE and PDSMS building editors only acccept NSBMD files. For gen 5 games, both OBJ and DAE work but the latter is recommended.
 
-### Subsection 2
-You can use bullet points, if you want.
-* Something
-* Like
-* This
-* Is
-* Also
-* Fine
+### Exporting Animations
+If the building you want to export has an animation, you can export it by selecting the animation on the menu on the right side of the editor after having selected the building, then click the *Open in CS* button right below it.
 
-## Section 2
-Dropdowns are cool. Look.
+![](animeditor.PNG)
 
-<details>
- <summary>Summary. Click me for more details.</summary>
- <p>Hi, I am the details you asked for. You can hide me as well.</p>
-</details>
+In Creative Studio, select the animation in the dropdown menu (it will be either in the Material or Skeletal Animation folder), then right click on it > Export and it will be saved as a NSBTA/NSBCA file depending on the animation type.
 
-## Section 3
-Inserting images works as well. Any method that clearly presents the image should be just fine.
+## Importing Buildings
 
-<img src="https://images.unsplash.com/photo-1549740425-5e9ed4d8cd34?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwzOTU0NTB8fGVufDB8fHw%3D&w=1000&q=80" alt="Trulli" style="width:100%">

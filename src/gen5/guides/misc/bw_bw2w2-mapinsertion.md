@@ -4,6 +4,7 @@
 
 This is a tutorial on how to insert your own maps in generation 5 games, as well as change the Area Data textures.
 It is assumed you have already made your map in PDSMS (or Blender) and have all the files already converted. If you're unsure how to do so, check Jay's video on creating a map with PDSMS.
+
 --- 
 ## Table of Contents
 * [Replacing Maps](#section)
@@ -54,7 +55,7 @@ After you're done, click the save button and save the new map container narc. Fo
 
 
 ### Using SAK
-If you've never used [Swiss Army Knife](), before launching the program you will have to go to SAK folder and in there create a new folder called *BaseROMs*, and in there put a fresh copy of the ROM you're editing. It must be named *Black*/*White*/*Black 2*/*White 2*.
+If you've never used [Swiss Army Knife](https://github.com/PlatinumMaster/SwissArmyKnife/releases), before launching the program you will have to go to SAK folder and in there create a new folder called *BaseROMs*, and in there put a fresh copy of the ROM you're editing. It must be named *Black*/*White*/*Black 2*/*White 2*.
 Now you can launch SAK and create a new project. 
 
 Go to the *Map Editor* tab and from the *Container Index* menu select the Map File number you previously found. Then it's just a matter of importing the relevant files:

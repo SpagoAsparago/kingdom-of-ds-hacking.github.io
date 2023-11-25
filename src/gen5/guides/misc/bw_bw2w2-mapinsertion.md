@@ -27,11 +27,13 @@ First you need to open CTRMap Zone Loader, and select the map you want to replac
 Now you have to find the file number of the map you want to replace, you can do so in two ways:
 
 * Using SDSME:
-**SDSME is very old and not recommended, if you have to use it only use it for viewing the map header section and don't make any edits with it**.
+
+**SDSME is very old and not recommended, it's recommended to only use it for viewing purposes and don't make any edits with it**.
 
 Go to the Matrix Editor tab and select your Matrix. Then in the Map Headers tab find out where your Header number is located. Open the Map Files tab, and the number you're looking for will be at the same spot of that header in the previous tab. If there is no Map Header tab for the Matrix you've selected, it means all Map Files share the same header.
 
 * Using GFMatrixEditor:
+
 First you have to oepn your ROM with [TinkeDSi](https://github.com/R-YaTian/TinkeDSi/releases/tag/V0.9.3), navigate the filesystem to a/0/0/9, and extract the file corrisponding to the matrix number.
 Then launch GFMatrixEditor and click the GFMat->Pack button, it will generate two spreadsheet, contaning the Headers and Map files for that matrix. Open the Headers spreadsheet and check where your header number is located, then open the Map Files spreadsheet and at the same spot check what number is there. That's the Map File you're looking for.
 

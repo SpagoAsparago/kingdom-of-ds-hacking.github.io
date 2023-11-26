@@ -1,4 +1,4 @@
-# How to insert your Maps in Gen V games
+# Inserting your own Maps in Gen V games
 > This guide was written by Gonhex and was formatted and expanded for this wiki by SpagoAsparago
 
 
@@ -36,10 +36,6 @@ Go to the Matrix Editor tab and select your Matrix. Then in the Map Headers tab 
 
 First you have to oepn your ROM with [TinkeDSi](https://github.com/R-YaTian/TinkeDSi/releases/tag/V0.9.3), navigate the filesystem to a/0/0/9, and extract the file corrisponding to the matrix number.
 Then launch GFMatrixEditor and click the GFMat->Pack button, it will generate two spreadsheet, contaning the Headers and Map files for that matrix. Open the Headers spreadsheet and check where your header number is located, then open the Map Files spreadsheet and at the same spot check what number is there. That's the Map File you're looking for.
-
-
-
-## Adding a new Header
 
 ## Inserting the Map
 There are two different programs that can insert the map:

@@ -26,6 +26,7 @@
 4) To link images, you can simply use ```![Optional Description](filepath/image.png) ```. With the *filepath* being relative to your guide's location
    * For example, in the indexing guide the image is linked with `![Indexed Image Example](resources/indexed_image_example.png)`
    * In the Pokémarts guide it looks like `![](resources/pt_hgss-pokemarts/pokemart_script1.PNG)`
+5) Once you're finished writing your markdown file (and linked all images correctly), in order for your file to show up on the wiki you need to edit `SUMMARY.md` at `src/SUMMARY.md`. Add an entry for your file to every game it applies (unless it's in the Universal section).
 
 ## Pull Requests
 1) Once you've finished writing your markdown file, click the *Commit Changes* button and commit to your main branch.

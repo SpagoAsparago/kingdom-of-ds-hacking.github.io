@@ -26,10 +26,11 @@
 4) To link images, you can simply use ```![Optional Description](filepath/image.png) ```. With the *filepath* being relative to your guide's location
    * For example, in the indexing guide the image is linked with `![Indexed Image Example](resources/indexed_image_example.png)`
    * In the Pokémarts guide it looks like `![](resources/pt_hgss-pokemarts/pokemart_script1.PNG)`
-5) Once you're finished writing your markdown file (and linked all images correctly), in order for your file to show up on the wiki you need to edit `SUMMARY.md` at `src/SUMMARY.md`. Add an entry for your file to every game it applies (unless it's in the Universal section).
+
 
 ## Pull Requests
 1) Once you've finished writing your markdown file, click the *Commit Changes* button and commit to your main branch.
-2) Make sure your branch is up to date before submitting a PR, you can do so by using the *Sync Fork* button in the main page of your repo.
-3) In your repository, click the *Pull Requests* tab and then *New Pull Request*. Make sure you are comparing your branch and the main branch of the original repository.
-4) Fill in the form and then submit the PR.
+2) In order for your file to show up on the wiki you need to edit `SUMMARY.md` at `src/SUMMARY.md`. Add an entry for your file to every game it applies (unless it's in the Universal section).
+3) Make sure your branch is up to date before submitting a PR, you can do so by using the *Sync Fork* button in the main page of your repo.
+4) In your repository, click the *Pull Requests* tab and then *New Pull Request*. Make sure you are comparing your branch and the main branch of the original repository.
+5) Fill in the form and then submit the PR.

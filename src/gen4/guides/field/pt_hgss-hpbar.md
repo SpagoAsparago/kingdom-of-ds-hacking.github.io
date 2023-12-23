@@ -1,8 +1,8 @@
-# How to increase the HP Bar speed<sup>*(Platinum/HGSS)*</sup>
+# How to change the HP Bar speed<sup>*(Platinum/HGSS)*</sup>
 > This guide was written by AdAstra, formatted for this wiki by SpagoAsparago.
-> Research: AdAstra, Mikelan and Nitram
+> Research: AdAstra, Mikelan98 and Nitram
 
-This is a tutorial on how to increase the HP Bar speed in gen 4 games.
+This is a tutorial on how to change the HP Bar speed in gen 4 games.
 
 Original file: https://pastebin.com/eCvYDcyw
 
@@ -18,11 +18,12 @@ Original file: https://pastebin.com/eCvYDcyw
 
 For Platinum, if 2x speed is enough for your needs, you can use [Cy's Hex Macros](https://github.com/dev-cyw/Cy-s-Hex-Macros/releases/tag/v1.2).
 
-Run the program and select the arm9.bin in your DSPRE's extracted folder, then click the appropriate button. When you load your project in DSPRE in order to export the ROM, remember to **not** re-extract it.
+Run the program and select the arm9.bin in your DSPRE's extracted folder, then click the appropriate button. 
+When you load your project in DSPRE in order to export the ROM, remember to **not** re-extract it.
 
 
 ## Hex Editing
-If you're using HGSS or want a different speed for Platinum, you need to hex edit.
+If you're using HGSS or want a different speed for Platinum, you need to hex edit the appropriate files. All offsets provided are based on the US ROM(s) and might be different on another version.
 
 ### Extracting the files
 
@@ -35,16 +36,44 @@ After you've loaded your ROM, click the NDS icon in the top bar, it should open 
 
 ### Changing the Speed
 
-Open the overlay in a hex editor, then go to the following address:
+Open the overlay in a hex editor, then go to the following offset:
 
-* Platinum: `0x2D046`
 * HGSS: `0x2E17A`
+* Platinum: `0x2D046`
 
-Then, change the byte you see with the following one depending on the speed you want to have:
--  `80 01` [x0.25]
--  `C0 01` [x0.5]
--  `40 02` [x2]
--  `80 02` [x4]
--  `C0 02` [x8]
+Then, replace the bytes at this offset with the following sequence, depending on the speed you want to have:
+
+<details> 
+ <summary>HGSS</summary>
+ 
+| Byte Sequence  | Speed |
+| ------------- | ------------- |  
+| 80 01 | x0.25 |
+| C0 01 | x0.5  | 
+| 40 02 | x2  | 
+| 80 02 | x4  | 
+| C0 02 | x8  | 
+
+</details>
+
+<details> 
+ <summary>Platinum</summary>
+ 
+| Byte Sequence  | Speed |
+| ------------- | ------------- |  
+| 88 1E | x2 |
+| C8 1E | x3  | 
+| 08 1F | x4  | 
+| 48 1F | x5  | 
+| 88 1F | x6  | 
+| C8 1F | x7  | 
+
+</details>
+
+If you want to customize your speed:
+
 
 ### Reinserting the files
+
+* For Platinum, if you edited the overlay in DSPRE's content folder, just load your ROM in DSPRE and export it. Remember to **not** re-extract the contents. If you extracted the overlay with Tinke, just do the same steps you did for extracting it, but this time use the *Change File* button and select your extracted overlay you modified.
+* For HGSS, in CrystalTile's NDS filesystem information window, you can select the files you previously extracted, right click and this time click *Compression* and select your own hex edited files. After you're done you can use `File>Build ROM...` to save your ROM.

@@ -4,8 +4,6 @@
 
 This is a tutorial on how to change the HP Bar speed in gen 4 games.
 
-Original file: https://pastebin.com/eCvYDcyw
-
 --- 
 ## Table of Contents
 * [Cy's Hex Macros](#section)

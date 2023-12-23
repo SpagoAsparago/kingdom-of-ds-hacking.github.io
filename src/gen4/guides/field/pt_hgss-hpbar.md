@@ -112,4 +112,4 @@ If you want to fine-tune the speed Animation:
 ### Reinserting the files
 
 * For Platinum, if you edited the overlay in DSPRE's content folder, just load your ROM in DSPRE and export it. Remember to **not** re-extract the contents. If you extracted the overlay with Tinke, just do the same steps you did for extracting it, but this time use the *Change File* button and select your extracted overlay you modified.
-* For HGSS, in CrystalTile's NDS filesystem information window, you can select the files you previously extracted, right click and this time click *Compression* and select your own hex edited files. After you're done you can use `File>Build ROM...` to save your ROM.
+* For HGSS, in CrystalTile's NDS filesystem information window, you can select the overlay you previously extracted, right click and this time click *Compression*, then select your own hex edited overlay. After you're done you can use `File>Build ROM...` to save your ROM.

@@ -142,6 +142,8 @@ MissionControl is the emulation of the game camera. It is enabled when the camer
 ### Sub-Editors
 The toolbar at the top under the tab represents the editors which you can utilize to modify the game. Clicking on one of these items will open the editor on the right of the screen.
 
+The grid coordinates displayed use the Y coordinate as the vertical position. This coordinate is always a multiple of 16 in the World Editor, but not in the PokéScript IDE.
+
 ---
 
 #### Proxy Editor
@@ -278,7 +280,7 @@ To select a resource entry to edit, click an element of the list on the left.
 
 You can modify the following properties:
 - `UID`: The ID of the resource that the game will use.
-- `Type`: The type of resource.
+- `Type`: The sound that will be played, if this building is a door.
 - `Door`: This allows you to specify the model which serves as the door, as well as the position of it relative to the parent model.
 - `Animation controller`: The controller which is responsible for handling animations. The options you have for this are:
   - `Not animated`: Static, without any animations.
@@ -405,6 +407,62 @@ This allows you to see the current scene geometry hierachies, as interpreted by 
 Allows you to edit zone properties (such as text and scripts).
 
 ![](img/image-30.png)
+
+You can modify the following properties:
+* Resources:
+- `Area`: The file in the Map Textures Area Data NARC used for this Zone ID under this Zone ID
+- `Matrix`: The matrix where this Zone ID is located
+- `Scripts`: The script file associated
+- `Level scripts`: Level scripts associated
+- `Text`: Text Archive associated
+- `Encounters`: Encounter file associated. If set to -1, none is being used. An encounter file can be associated to multiple Zone IDs
+- `Entities`: The Entity file associated
+- `Cam Boundaries`:
+- `NPC Info cache`:
+- `Battle BG`:
+
+* BGM (background music):
+  - `Spring/Summer/Autumn/Winter`: The soundtrack associated with the corresponding season.
+  - `Allow cycling/surf BGM`: If enabled, the cycling/surf soundtrack will be played during those actions.
+
+* Fly Landing point:
+ - Determines where the Player will land when flying to this location. If this Zone ID is also the one first loaded when starting a new game, the player will be spawned at those coordinates as well.
+
+* Features:
+ - Determines if Rails and/or Dynamic cameras are enabled for this Zone ID.
+
+* Location info:
+  - `Map type`:
+  - `Map transition`:
+  - `Parent Zone ID`:
+  - `Location name ID`:
+  - `Display type`:
+ * Flags:
+  - `Allow cycling`: Determines if the player is allowed to use the bycicle
+  - `Allow running (unused)`: Always enabled in all the maps. Even if disabled, it doesn't prevent the palyer from running.
+  - `Allow Escape Rope`: If enabled, the player can use an Escape Rope
+  - `Allow flying from here`: If enabled, the player can fly from this location
+  - `Allow Entralink warp`: If enabled, the player can warp to the Entralink from here
+ * Environment:
+  - `Weather`:
+  - `Camera`:
+  - `Fog`:
+  - `Flash`:
+  - `Object proj. matrix`:
+
+* Area Resources:
+  - `Buildings`: The file in the Buildings Textures Area Data NARC used for this Zone ID
+  - `Textures`: The file in the Map Textures Area Data NARC used for this Zone ID. Corresponds to the value in `Area` field + [0-3], depending on the season.
+  - `SRT Animations`: The file in the Area SRT Animations NARC used for this Zone ID
+  - `Pattern animations`: The file in the Area Pattern Animations NARC used for this Zone ID
+  - `Lights`:
+  - `Outlines`:
+  - `Actor materials`:
+* Other
+  - `Gimmick`:
+  - `Difficulty level`: How much higher (or lower) the trainer levels affected by Challenge Mode will be
+  - `Name icon`:
+  - `Unknwon 1`: Unknown.
 ---
 
 ### Event Editor

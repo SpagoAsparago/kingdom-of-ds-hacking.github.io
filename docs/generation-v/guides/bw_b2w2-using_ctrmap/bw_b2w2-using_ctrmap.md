@@ -410,16 +410,16 @@ Allows you to edit zone properties (such as text and scripts).
 
 You can modify the following properties:
 * Resources:
-- `Area`: The file in the Map Textures Area Data NARC used for this Zone ID under this Zone ID
-- `Matrix`: The matrix where this Zone ID is located
-- `Scripts`: The script file associated
+- `Area`: The file in the a/0/1/4 Area Data NARC (map textures) used for all maps under this Zone ID
+- `Matrix`: The file in the a/0/0/9 Matrices Narc used by this Zone ID
+- `Scripts`: The script file in the a/0/5/6 Scripts NARC associated
 - `Level scripts`: Level scripts associated
 - `Text`: Text Archive associated
-- `Encounters`: Encounter file associated. If set to -1, none is being used. An encounter file can be associated to multiple Zone IDs
-- `Entities`: The Entity file associated
+- `Encounters`: The file in the a/1/2/7 Encounter NARC associated . If set to -1, none is being used. An encounter file can be associated to multiple Zone IDs.
+- `Entities`: The file in the a/1/2/6 Field Event Objects NARC associated.
 - `Cam Boundaries`:
 - `NPC Info cache`:
-- `Battle BG`:
+- `Battle BG`: What Battle Background in the a/0/1/1 NARC is being used
 
 * BGM (background music):
   - `Spring/Summer/Autumn/Winter`: The soundtrack associated with the corresponding season.
@@ -439,22 +439,22 @@ You can modify the following properties:
   - `Display type`:
  * Flags:
   - `Allow cycling`: Determines if the player is allowed to use the bycicle
-  - `Allow running (unused)`: Always enabled in all the maps. Even if disabled, it doesn't prevent the palyer from running.
+  - `Allow running (unused)`: Always enabled. Even if disabled, it doesn't prevent the player from running.
   - `Allow Escape Rope`: If enabled, the player can use an Escape Rope
   - `Allow flying from here`: If enabled, the player can fly from this location
   - `Allow Entralink warp`: If enabled, the player can warp to the Entralink from here
  * Environment:
-  - `Weather`:
-  - `Camera`:
+  - `Weather`: Overworld weather value
+  - `Camera`: Camera perspective value
   - `Fog`:
   - `Flash`:
   - `Object proj. matrix`:
 
 * Area Resources:
-  - `Buildings`: The file in the Buildings Textures Area Data NARC used for this Zone ID
-  - `Textures`: The file in the Map Textures Area Data NARC used for this Zone ID. Corresponds to the value in `Area` field + [0-3], depending on the season.
-  - `SRT Animations`: The file in the Area SRT Animations NARC used for this Zone ID
-  - `Pattern animations`: The file in the Area Pattern Animations NARC used for this Zone ID
+  - `Buildings`: The file in the a/0/1/3 Area Data NARC (building textures)
+  - `Textures`: Corresponds to the value in the `Area` field + [0-3], depending on the season.
+  - `SRT Animations`: The file in the a/0/6/8 Area SRT Animations NARC. If set to 255, none is being used.
+  - `Pattern animations`: The file in the a/0/6/9 Area Pattern Animations NARC. If set to 255, none is being used.
   - `Lights`:
   - `Outlines`:
   - `Actor materials`:

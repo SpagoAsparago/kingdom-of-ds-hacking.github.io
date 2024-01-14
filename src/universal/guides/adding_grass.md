@@ -1,7 +1,7 @@
 # Tutorial Name
 > This guide was written by SpagoAsparago
 
-This is a tutorial on how to add wild grass to existing maps. It requires the use of PDSMS, Blender and the use of DSPRE (Gen 4) or CTRMap and either BasicPerHanlder/SAK (Gen 5)
+This is a tutorial on how to add wild grass to existing maps. It requires the use of DSPRE (Gen 4) or CTRMap and either BasicPerHanlder/SAK (Gen 5), in addition to Blender and PDSMS.
 
 --- 
 ## Table of Contents
@@ -22,34 +22,33 @@ This is a tutorial on how to add wild grass to existing maps. It requires the us
 ### Gen 4
 Load your game into DSPRE, then go to the Header Editor and search the map you want to add grass tiles to. 
 
-Click *Open Matrix*, you will be redirected to Matrix Editor in the Headers Tab, which will have highlighted the corresponding cell of the map you've selected.
+Click `Open Matrix`, you will be redirected to Matrix Editor in the Headers Tab, which will have highlighted the corresponding cell of the map you've selected.
 
-Switch to the *Map Files* tab in the same editor and double click on the spot that was previously highlighted. 
-You will be sent to the Map Editor, from where you can export the map model by going to the *3D Model* tab and clicking *Export DAE*. 
-Export the Tile Permissions file from the *Move Permissions* tab as well.
+Switch to the `Map Files` tab in the same editor and double click on the spot that was previously highlighted. 
+You will be sent to the Map Editor, from where you can export the map model by going to the `3D Model` tab and clicking `Export DAE`. 
+Export the Tile Permissions file from the `Move Permissions` tab as well.
 
 ### Gen 5
-Load your game into CTRMap, then go the Zone Loader tab and select the map you want to add grass tiles to.
-From the top bar go to *File*>*Serialize Scene* and save the resulting file. 
+Load your game into CTRMap, then go the `Zone Loader` tab and select the map you want to add grass tiles to.
+From the top bar go to `File`>`Serialize Scene` and save the resulting file. 
 
 Now launch Creative Studio (you can do so from the *Tools* button in the top bar) and from *Import*>*Generic* select the file you just exported.
-From the dropdown menu on the left, open the *Models* folder and check which one is the map itself.
-Then click *Export*>*COLLADA*. From the settings, you want to make sure that the first setting has the *Single Model* option checked, and that the model containing the map is selected. You can leave the rest as deafult. 
+From the dropdown menu on the left, open the `Models` folder and check which one is the map itself.
+Then click `Export`>`COLLADA`. From the settings, you want to make sure that the first setting has the `Single Model` option checked, and that the model containing the map is selected. You can leave the rest as deafult. 
 
 ## Converting the Model in Blender
 You need to use Blender in order to convert the map model to OBJ, so that it can be loaded into PDSMS. Any version of Blender is fine for this.
 
-Launch Blender, then go to *File*>*Import*>*Collada (.dae)* and select your previously exported DAE file. The model will be loaded it and should have an orange outline.
-Now type S + 0.0625 + Enter to scale the model to the correct size for PDSMS. Then go to *File*>*Export*>*Wavefront (.obj)*. Make sure to check **Selection only** and leave anything else as default.
+Launch Blender, then go to `File`>`Import`>`Collada (.dae)` and select your previously exported DAE file. The model will be loaded it and should have an orange outline.
+Now type S + 0.0625 + Enter to scale the model to the correct size for PDSMS. Then go to `File`>`Export`>`Wavefront (.obj)`. Make sure to check **Selection only** and leave anything else as default.
 Save the resulting OBJ file somewhere and open PDSMS.
 
 ## Adding the Grass tiles
-In PDSMS, make a new empty map and make sure you're using a tileset containing the grass tiles. Go to *Tools*>*TileSet Editor* then click the *Add Tiles* button and check the *Flip YZ* option.
+In PDSMS, make a new empty map and make sure you're using a tileset containing the grass tiles. Go to `Tools`>`TileSet Editor` then click the `Add Tiles` button and check the `Flip YZ` option.
 Select your previously exported OBJ file, then close the TileSet Editor and go back to the map.
 
-Place the new tile you've added in the center of the grid layout (might need to delete and replace it a couple times to get the exact position). 
+Place the new tile you've added in the center of the grid layout (make sure it's centered properly). 
 You can add the grass tiles by selecting a different layer above the one containing the tile you've just placed.
-
 
 ## Editing Tile Permissions
 While grass tiles has been added to the map, this is purely a visual effect and will not have any change without changing the move permissions and later assigning an encounter file to the map itself.
